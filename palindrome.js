@@ -25,9 +25,11 @@ const checkPalindrome = (str) => {
  //changing to lowercase
  let strLower = str.toLowerCase();
 
- //removing spaces
- let strNoSpaces = strLower.replace(/\s/g, '');
-
+ //removing spaces (removing all non-alphanumeric characters)
+ let regexPattern = /[^A-Za-z0-9]/g;
+ let strNoSpaces = strLower.replace(regexPattern, '');
+ console.log(strNoSpaces);
+ 
  //checking if it is a palindrome
  let length = strNoSpaces.length;
  for(let i = 0; i < length/2; i++) {
