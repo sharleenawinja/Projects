@@ -24,4 +24,6 @@ function twoSum(nums, target) {
     }
 };
 
-twoSum([2, 7, 11, 5], 9);
+console.log(twoSum([2, 7, 11, 5], 9)); //expected [0, 1]
+console.log(twoSum([3, 2, 4], 6));  //expected [1, 2]
+console.log(twoSum([15, 7, 11, 2], 9)); //expected [1, 3]
