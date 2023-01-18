@@ -38,4 +38,4 @@ const checkPalindrome = (str) => {
 };
 
 console.log(checkPalindrome('racecar'));
-console.log(checkPalindrome('A man, a plan, a canal, Panama!'));
+console.log(checkPalindrome('A man, a plan, a canal, Panama!')); //does not give expected output. Fix this later.
