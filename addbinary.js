@@ -6,3 +6,4 @@ function addBinary(a, b) {
   }
 
 console.log(addBinary('11', '1'));  
+console.log(addBinary('11001', '101'));  
