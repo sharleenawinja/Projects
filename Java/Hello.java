@@ -23,5 +23,10 @@ public class Hello {
 
         //You can also perfom mathematical calculations
         System.out.println(5+4);
+
+        //Java supports both single line comments and multiline comments
+        /*
+         * this is a multi line comment
+         */
     }
 }
