@@ -23,3 +23,25 @@ const sumArray = (arr) => {
 };
 
 console.log(sumArray([1, 2, 3, 4, 5]));
+
+// Write a function removeDuplicates that takes an array of strings as input and returns an array containing only the unique strings in the input array.
+
+// Input: ['apple', 'banana', 'cherry', 'banana', 'durian', 'apple']
+// Expected output: ['apple', 'banana', 'cherry', 'durian']
+
+// Input: ['cat', 'dog', 'cat', 'fish', 'fish', 'bird', 'bird']
+// Expected output: ['cat', 'dog', 'fish', 'bird']
+
+function removeDuplicates(arr) {
+  const result = [];
+  arr.forEach((element) => {
+    if (!result.includes(element)) {
+      result.push(element);
+    }
+  });
+  return result;
+}
+
+console.log(
+  removeDuplicates(["cat", "dog", "cat", "fish", "fish", "bird", "bird"])
+);
