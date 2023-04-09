@@ -45,3 +45,32 @@ function removeDuplicates(arr) {
 console.log(
   removeDuplicates(["cat", "dog", "cat", "fish", "fish", "bird", "bird"])
 );
+
+// Write a function reverseArray that takes an array of any type as input and returns a new array with the same elements in reverse order.
+
+// Input: [1, 2, 3, 4, 5]
+// Expected output: [5, 4, 3, 2, 1]
+
+// Input: ['apple', 'banana', 'cherry', 'durian']
+// Expected output: ['durian', 'cherry', 'banana', 'apple']
+
+function reverseArray(arr) {
+  const result = [];
+  const length = arr.length;
+  for (let i = 0; i < length; i++) {
+    let lastElement = arr.pop();
+    result.push(lastElement);
+  }
+
+  return result;
+}
+
+console.log(reverseArray(["apple", "banana", "cherry", "durian"]));
+
+function secondReverseArray(array) {
+  const result = [];
+  for (let i = array.length - 1; i >= 0; i--) {
+    result.push(array[i]);
+  }
+  return result;
+}
