@@ -9,3 +9,17 @@ function arrayDiff(array1, array2) {
 }
 
 console.log(arrayDiff([1, 2, 2, 2, 3], [2]));
+
+// Write a function sumArray that takes an array of numbers as input and returns the sum of all the numbers in the array.
+
+// Input: [1, 2, 3, 4, 5]
+// Expected output: 15
+
+// Input: [-1, 0, 1, 2, 3]
+// Expected output: 5
+
+const sumArray = (arr) => {
+  return arr.reduce((acc, value) => acc + value, 0);
+};
+
+console.log(sumArray([1, 2, 3, 4, 5]));
