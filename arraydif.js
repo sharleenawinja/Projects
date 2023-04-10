@@ -100,3 +100,16 @@ function sumPrices(items) {
 }
 
 console.log(sumPrices(items)); // 60
+
+// Sort an array of objects by a property value
+const users = [
+  { name: "John", age: 30 },
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 35 },
+];
+
+function sortByAge(users) {
+  return users.sort((a, b) => a.age - b.age);
+}
+
+console.log(sortByAge(users)); // [{name: 'Alice', age: 25}, {name: 'John', age: 30}, {name: 'Bob', age: 35}]
