@@ -87,3 +87,16 @@ function mergeArrays(...arrays) {
 }
 
 console.log(mergeArrays(arr1, arr2, arr3)); // [1, 2, 3, 4, 5]
+
+// Sum the values in an array of objects
+const items = [
+  { name: "item1", price: 10 },
+  { name: "item2", price: 20 },
+  { name: "item3", price: 30 },
+];
+
+function sumPrices(items) {
+  return items.reduce((total, item) => total + item.price, 0);
+}
+
+console.log(sumPrices(items)); // 60
