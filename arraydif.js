@@ -74,3 +74,16 @@ function secondReverseArray(array) {
   }
   return result;
 }
+
+//  Merge multiple arrays and remove duplicates
+const arr1 = [1, 2, 3];
+const arr2 = [2, 3, 4];
+const arr3 = [3, 4, 5];
+
+function mergeArrays(...arrays) {
+  const merged = arrays.flat();
+  const unique = Array.from(new Set(merged));
+  return unique;
+}
+
+console.log(mergeArrays(arr1, arr2, arr3)); // [1, 2, 3, 4, 5]
