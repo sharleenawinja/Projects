@@ -113,3 +113,24 @@ function sortByAge(users) {
 }
 
 console.log(sortByAge(users)); // [{name: 'Alice', age: 25}, {name: 'John', age: 30}, {name: 'Bob', age: 35}]
+
+// find the most frequently occuring value in an array
+const arr = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4];
+
+function mostFrequent(arr) {
+  const counts = {};
+  let maxCount = 0;
+  let maxItem = null;
+
+  for (const item of arr) {
+    counts[item] = (counts[item] || 0) + 1;
+    if (counts[item] > maxCount) {
+      maxCount = counts[item];
+      maxItem = item;
+    }
+  }
+
+  return maxItem;
+}
+
+console.log(mostFrequent(arr)); // 4
