@@ -134,3 +134,19 @@ function mostFrequent(arr) {
 }
 
 console.log(mostFrequent(arr)); // 4
+
+// Calculate the average of the values in an array of objects
+const data = [
+  { name: "John", score: 80 },
+  { name: "Alice", score: 90 },
+  { name: "Bob", score: 75 },
+  { name: "Jane", score: 85 },
+];
+
+function averageScore(data) {
+  const sum = data.reduce((acc, item) => acc + item.score, 0);
+  const avg = sum / data.length;
+  return avg;
+}
+
+console.log(averageScore(data)); // 82.5
