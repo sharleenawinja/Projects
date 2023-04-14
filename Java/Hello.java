@@ -10,7 +10,7 @@ public class Hello {
 
         //System is a built in java class that contains useful members, such as out which is short for output
         //The println() method, short for "print line", is used to print a value to the screen or a file.
-        //Each code statement should end in a semicolom (;)
+        //Each code statement should end in a semicolon (;)
         System.out.println("Hello World!");
 
         //There is also a print() method but it does not insert a new line
