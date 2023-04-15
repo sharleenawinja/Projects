@@ -15,6 +15,9 @@ public class Strrings {
 
         // other string methods
         System.out.println(greeting.toUpperCase());
+
+        // The indexOf() method returns the index (the position) of the first occurrence of a specified text in a string (including whitespace):
+        System.out.println(greeting.indexOf('o'));
     }
 
     
